@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.litte.ui.userinterface.TextViewActivity">
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:background="#8fffad"
+        android:textSize="20sp"
+        android:textColor="#EA5246"
+        android:textStyle="bold|italic"
+        android:text="TextView(显示框)"
+        android:gravity="center"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="带阴影的TextView"
+        android:background="#EA5246"
+        android:textColor="#4A4AFF"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:shadowColor="#F9F900"
+        android:shadowRadius="8.0"
+        android:shadowDx="10.0"
+        android:shadowDy="10.0"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/shape_textview_bg"
+        android:text="渐变色的textView"
+        android:gravity="center"
+        android:textSize="44sp"/>
+    <TextView
+        android:id="@+id/tv_textView_jay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="JAY CHOU"
+        android:layout_gravity="center_horizontal"
+        android:drawableRight="@drawable/jay"
+        android:drawableLeft="@drawable/jay"
+        android:drawableTop="@drawable/jay"
+        android:drawableBottom="@drawable/jay"/>
+    <TextView
+        android:id="@+id/tv_textView_autoLink"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="http://www.baidu.com"
+        android:autoLink="web"
+        android:gravity="center_horizontal"
+        android:textSize="18sp"/>
+
+</LinearLayout>

@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.litte.ui.MainActivity">
+
+
+    <Button
+        android:id="@+id/btn_linearlayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="26dp"
+        android:text="线性布局"
+        android:textAlignment="center" />
+
+    <Button
+        android:id="@+id/btn_relativelayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/btn_linearlayout"
+        android:layout_centerHorizontal="true"
+        android:text="相对布局" />
+
+    <Button
+        android:id="@+id/btn_tablelayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/btn_relativelayout"
+        android:layout_marginEnd="25dp"
+        android:text="表格布局" />
+
+    <Button
+        android:id="@+id/btn_framelayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/btn_linearlayout"
+        android:layout_below="@+id/btn_linearlayout"
+        android:layout_marginTop="29dp"
+        android:text="帧布局"
+        android:layout_alignEnd="@+id/btn_linearlayout" />
+
+    <Button
+        android:id="@+id/btn_absolutelayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/btn_relativelayout"
+        android:layout_alignStart="@+id/btn_relativelayout"
+        android:layout_alignTop="@+id/btn_framelayout"
+        android:text="据对布局" />
+
+    <Button
+        android:id="@+id/btn_gridelayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/btn_tablelayout"
+        android:layout_alignStart="@+id/btn_tablelayout"
+        android:layout_alignTop="@+id/btn_absolutelayout"
+        android:text="网格布局" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_relativelayout"
+        android:text="六大布局"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Android中的UI布局"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        android:layout_below="@+id/btn_absolutelayout"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/btn_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        android:text="TextView"
+        android:layout_below="@+id/textView2"
+        android:layout_alignEnd="@+id/btn_framelayout" />
+
+    <Button
+        android:id="@+id/btn_editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        android:text="EditText"
+        android:layout_alignBaseline="@+id/btn_textView"
+        android:layout_alignBottom="@+id/btn_textView"
+        android:layout_alignStart="@+id/btn_absolutelayout" />
+
+    <Button
+        android:id="@+id/btn_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        android:text="Button"
+        android:layout_alignBaseline="@+id/btn_editText"
+        android:layout_alignBottom="@+id/btn_editText"
+        android:layout_alignEnd="@+id/btn_gridelayout" />
+
+    <Button
+        android:id="@+id/btn_imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        android:text="ImageView"
+        android:layout_below="@+id/btn_textView"
+        android:layout_alignEnd="@+id/btn_textView" />
+
+    <Button
+        android:id="@+id/btn_radioButton_checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        android:text="Radio CheckBox"
+        android:layout_alignTop="@+id/btn_imageView"
+        android:layout_toEndOf="@+id/btn_imageView" />
+
+    <Button
+        android:id="@+id/btn_toggleButton_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btn_radioButton_checkBox"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        android:text="ToggleButton  Switch"
+        android:layout_alignStart="@+id/btn_gridelayout" />
+
+    <Button
+        android:id="@+id/btn_progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_imageView"
+        android:layout_marginTop="18dp"
+        android:layout_toStartOf="@+id/btn_editText"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        android:text="ProgressBar" />
+
+    <Button
+        android:id="@+id/btn_seekBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        android:text="SeekBar"
+        android:layout_alignBaseline="@+id/btn_progressBar"
+        android:layout_alignBottom="@+id/btn_progressBar"
+        android:layout_alignEnd="@+id/btn_editText" />
+
+    <Button
+        android:id="@+id/btn_ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btn_seekBar"
+        android:layout_alignEnd="@+id/btn_button"
+        android:text="RatingBar" />
+</RelativeLayout>

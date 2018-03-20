@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00CCCCFF"
+    tools:context="com.litte.ui.layout.AddActivity">
+
+    <ImageView
+        android:id="@+id/iv_add"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:src="@drawable/relative_1"
+        android:layout_centerInParent="true"
+        android:scaleType="fitXY"/>
+    <ImageView
+        android:id="@+id/iv_cancel"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/cancel"
+        android:layout_marginRight="-1dp"
+        android:layout_marginTop="-1dp"
+        android:layout_alignTop="@+id/iv_add"
+        android:layout_alignEnd="@+id/iv_add" />
+</RelativeLayout>
