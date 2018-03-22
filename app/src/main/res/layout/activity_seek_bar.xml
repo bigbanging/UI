@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.litte.ui.userinterface.SeekBarActivity">
+
+    <SeekBar
+        android:id="@+id/seekbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/tv_seekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="当前进度为："
+        android:layout_marginTop="20dp"
+        android:textSize="18sp"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#FF96E85D"/>
+    <SeekBar
+        android:id="@+id/seekbar1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxHeight="5.0dp"
+        android:minHeight="5.0dp"
+        android:progressDrawable="@drawable/seek_bar"
+        android:thumb="@drawable/seekbar_selector"
+        android:layout_marginTop="25dp"/>
+    <TextView
+        android:id="@+id/tv_seekBar1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="当前进度为："
+        android:layout_marginTop="20dp"
+        android:textSize="18sp"/>
+</LinearLayout>

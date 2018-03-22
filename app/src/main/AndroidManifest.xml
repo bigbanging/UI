@@ -3,6 +3,7 @@
     package="com.litte.ui">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
 
     <application
         android:allowBackup="true"
@@ -28,7 +29,23 @@
         <activity android:name=".layout.GridActivity" />
         <activity android:name=".layout.AbsoluteActivity" />
         <activity android:name=".userinterface.TextViewActivity" />
-        <activity android:name=".userinterface.EditTextActivity"></activity>
+        <activity android:name=".userinterface.EditTextActivity" />
+        <activity android:name=".userinterface.ImageViewActivity" />
+        <activity android:name=".userinterface.RadioCheckActivity" />
+        <activity android:name=".userinterface.ToggleSwitchActivity" />
+        <activity android:name=".userinterface.ProgressBarActivity" />
+        <activity android:name=".userinterface.SeekBarActivity" />
+        <activity android:name=".userinterface.RatingBarActivity" />
+        <activity android:name=".userinterface.ScrollViewActivity" />
+        <activity android:name=".userinterface.DateAndTimeActivity" />
+        <activity android:name=".userinterface.ListViewActivity" />
+        <activity android:name=".userinterface.ListView2Activity" />
+        <activity android:name=".userinterface.ListAndAdapterActivity" />
+        <activity android:name=".userinterface.ListViewWithCheckBoxActivity" />
+        <activity android:name=".userinterface.UpdateListViewActivity" />
+        <activity android:name=".userinterface.MutiListViewActivity" />
+        <activity android:name=".userinterface.GridViewActivity" />
+        <activity android:name=".userinterface.SpinnerActivity"></activity>
     </application>
 
 </manifest>

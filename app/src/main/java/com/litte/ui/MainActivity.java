@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 import com.litte.ui.layout.AbsoluteActivity;
 import com.litte.ui.layout.FrameActivity;
@@ -12,8 +13,19 @@ import com.litte.ui.layout.GridActivity;
 import com.litte.ui.layout.LinearActivity;
 import com.litte.ui.layout.RelativeActivity;
 import com.litte.ui.layout.TableActivity;
+import com.litte.ui.userinterface.DateAndTimeActivity;
 import com.litte.ui.userinterface.EditTextActivity;
+import com.litte.ui.userinterface.GridViewActivity;
+import com.litte.ui.userinterface.ImageViewActivity;
+import com.litte.ui.userinterface.ListViewActivity;
+import com.litte.ui.userinterface.ProgressBarActivity;
+import com.litte.ui.userinterface.RadioCheckActivity;
+import com.litte.ui.userinterface.RatingBarActivity;
+import com.litte.ui.userinterface.ScrollViewActivity;
+import com.litte.ui.userinterface.SeekBarActivity;
+import com.litte.ui.userinterface.SpinnerActivity;
 import com.litte.ui.userinterface.TextViewActivity;
+import com.litte.ui.userinterface.ToggleSwitchActivity;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -52,6 +64,38 @@ public class MainActivity extends Activity {
     @BindView(R.id.btn_ratingBar)
     Button btnRatingBar;
 
+    @BindView(R.id.btn_scrollView)
+    Button btnScrollView;
+    @BindView(R.id.btn_date_time)
+    Button btnDateTime;
+    @BindView(R.id.btn_listView)
+    Button btnListView;
+    @BindView(R.id.btn_gridView)
+    Button btnGridView;
+    @BindView(R.id.btn_spinner)
+    Button btnSpinner;
+    @BindView(R.id.btn_autoCompleteTextView)
+    Button btnAutoCompleteTextView;
+    @BindView(R.id.btn_expandableListView)
+    Button btnExpandableListView;
+    @BindView(R.id.btn_viewFlipper)
+    Button btnViewFlipper;
+    @BindView(R.id.btn_toast)
+    Button btnToast;
+    @BindView(R.id.btn_notification)
+    Button btnNotification;
+    @BindView(R.id.btn_alertDialog)
+    Button btnAlertDialog;
+    @BindView(R.id.btn_popupWindow)
+    Button btnPopupWindow;
+    @BindView(R.id.btn_menu)
+    Button btnMenu;
+    @BindView(R.id.btn_viewPager)
+    Button btnViewPager;
+    @BindView(R.id.btn_drawerLayout)
+    Button btnDrawerLayout;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -60,7 +104,9 @@ public class MainActivity extends Activity {
     }
 
     @OnClick({R.id.btn_linearlayout, R.id.btn_relativelayout, R.id.btn_tablelayout, R.id.btn_framelayout, R.id.btn_absolutelayout, R.id.btn_gridelayout,
-            R.id.btn_textView, R.id.btn_editText, R.id.btn_button, R.id.btn_imageView, R.id.btn_radioButton_checkBox, R.id.btn_toggleButton_switch, R.id.btn_progressBar, R.id.btn_seekBar, R.id.btn_ratingBar})
+            R.id.btn_textView, R.id.btn_editText, R.id.btn_button, R.id.btn_imageView, R.id.btn_radioButton_checkBox, R.id.btn_toggleButton_switch, R.id.btn_progressBar, R.id.btn_seekBar, R.id.btn_ratingBar,
+            R.id.btn_scrollView, R.id.btn_date_time, R.id.btn_listView, R.id.btn_gridView, R.id.btn_spinner, R.id.btn_autoCompleteTextView, R.id.btn_expandableListView, R.id.btn_viewFlipper, R.id.btn_toast,
+            R.id.btn_notification, R.id.btn_alertDialog, R.id.btn_popupWindow, R.id.btn_menu, R.id.btn_viewPager, R.id.btn_drawerLayout})
     public void onViewClicked(View view) {
         switch (view.getId()) {
             /*Android 中的6大布局*/
@@ -93,18 +139,60 @@ public class MainActivity extends Activity {
             case R.id.btn_button:
                 break;
             case R.id.btn_imageView:
+                startActivity(new Intent(this, ImageViewActivity.class));
                 break;
             case R.id.btn_radioButton_checkBox:
+                startActivity(new Intent(this, RadioCheckActivity.class));
                 break;
             case R.id.btn_toggleButton_switch:
+                startActivity(new Intent(this, ToggleSwitchActivity.class));
                 break;
             case R.id.btn_progressBar:
+                startActivity(new Intent(this, ProgressBarActivity.class));
                 break;
             case R.id.btn_seekBar:
+                startActivity(new Intent(this, SeekBarActivity.class));
                 break;
             case R.id.btn_ratingBar:
+                startActivity(new Intent(this, RatingBarActivity.class));
+                break;
+            /*----------------------------------------------------------*/
+
+            case R.id.btn_scrollView:
+                startActivity(new Intent(this, ScrollViewActivity.class));
+                break;
+            case R.id.btn_date_time:
+                startActivity(new Intent(this, DateAndTimeActivity.class));
+                break;
+            case R.id.btn_listView:
+                startActivity(new Intent(this, ListViewActivity.class));
+                break;
+            case R.id.btn_gridView:
+                startActivity(new Intent(this, GridViewActivity.class));
+                break;
+            case R.id.btn_spinner:
+                startActivity(new Intent(this, SpinnerActivity.class));
+                break;
+            case R.id.btn_autoCompleteTextView:
+                break;
+            case R.id.btn_expandableListView:
+                break;
+            case R.id.btn_viewFlipper:
+                break;
+            case R.id.btn_toast:
+                break;
+            case R.id.btn_notification:
+                break;
+            case R.id.btn_alertDialog:
+                break;
+            case R.id.btn_popupWindow:
+                break;
+            case R.id.btn_menu:
+                break;
+            case R.id.btn_viewPager:
+                break;
+            case R.id.btn_drawerLayout:
                 break;
         }
     }
-
 }

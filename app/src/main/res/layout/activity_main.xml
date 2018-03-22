@@ -187,4 +187,139 @@
         android:layout_alignBottom="@+id/btn_seekBar"
         android:layout_alignEnd="@+id/btn_button"
         android:text="RatingBar" />
+
+    <Button
+        android:id="@+id/btn_scrollView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="21dp"
+        android:text="ScrollView"
+        android:layout_below="@+id/btn_progressBar"
+        android:layout_alignStart="@+id/btn_framelayout" />
+
+    <Button
+        android:id="@+id/btn_date_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date和Time"
+        android:layout_alignBaseline="@+id/btn_scrollView"
+        android:layout_alignBottom="@+id/btn_scrollView"
+        android:layout_toEndOf="@+id/btn_scrollView"
+        android:layout_marginStart="31dp" />
+
+    <Button
+        android:id="@+id/btn_listView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ListView"
+        android:layout_alignBaseline="@+id/btn_date_time"
+        android:layout_alignBottom="@+id/btn_date_time"
+        android:layout_toEndOf="@+id/btn_date_time"
+        android:layout_marginStart="26dp" />
+
+    <Button
+        android:id="@+id/btn_gridView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GridView"
+        android:layout_below="@+id/btn_scrollView"
+        android:layout_alignStart="@+id/btn_scrollView"
+        android:layout_marginTop="18dp" />
+
+    <Button
+        android:id="@+id/btn_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Spinner"
+        android:layout_alignBaseline="@+id/btn_gridView"
+        android:layout_alignBottom="@+id/btn_gridView"
+        android:layout_toEndOf="@+id/btn_scrollView" />
+
+    <Button
+        android:id="@+id/btn_autoCompleteTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="AutoCompleteTextView"
+        android:layout_alignBaseline="@+id/btn_spinner"
+        android:layout_alignBottom="@+id/btn_spinner"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:id="@+id/btn_expandableListView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:text="ExpandableListView"
+        android:layout_below="@+id/btn_gridView"
+        android:layout_alignStart="@+id/btn_imageView" />
+
+    <Button
+        android:id="@+id/btn_viewFlipper"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btn_expandableListView"
+        android:layout_marginBottom="6dp"
+        android:layout_marginStart="12dp"
+        android:layout_toEndOf="@+id/btn_spinner"
+        android:text="ViewFlipper" />
+
+    <Button
+        android:id="@+id/btn_toast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btn_viewFlipper"
+        android:layout_alignParentEnd="true"
+        android:text="Toast" />
+
+    <Button
+        android:id="@+id/btn_notification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Notification"
+        android:layout_below="@+id/btn_expandableListView"
+        android:layout_alignStart="@+id/btn_textView"
+        android:layout_marginTop="10dp" />
+
+    <Button
+        android:id="@+id/btn_alertDialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/btn_notification"
+        android:layout_centerHorizontal="true"
+        android:text="AlertDialog" />
+
+    <Button
+        android:id="@+id/btn_popupWindow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PopupWindow"
+        android:layout_alignBaseline="@+id/btn_alertDialog"
+        android:layout_alignBottom="@+id/btn_alertDialog"
+        android:layout_toStartOf="@+id/btn_toast" />
+
+    <Button
+        android:id="@+id/btn_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/btn_notification"
+        android:layout_below="@+id/btn_notification"
+        android:layout_marginTop="44dp"
+        android:text="Menu" />
+
+    <Button
+        android:id="@+id/btn_viewPager"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/btn_menu"
+        android:layout_toStartOf="@+id/btn_seekBar"
+        android:text="ViewPager" />
+
+    <Button
+        android:id="@+id/btn_drawerLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/btn_viewPager"
+        android:layout_toEndOf="@+id/btn_seekBar"
+        android:text="DrawerLayout" />
+
 </RelativeLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--这里用到一个layer-list的drawable资源！其实就是层叠图片，依次是:背景，二级进度条，当前进度：-->
+    <item android:id="@+id/background">
+        <shape>
+            <solid android:color="#FFFFD042"/>
+        </shape>
+    </item>
+    <item android:id="@+id/secondaryProgress">
+        <clip>
+            <shape>
+                <solid android:color="#FFFFFFFF"/>
+            </shape>
+        </clip>
+    </item>
+    <item android:id="@+id/progress">
+        <clip>
+            <shape>
+                <solid android:color="#FF96E85D"/>
+            </shape>
+        </clip>
+    </item>
+</layer-list>

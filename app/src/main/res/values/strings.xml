@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">UI</string>
     <string name="absolute_string">建议使用：LinearLayout的weight权重属性+ RelativeLayout来构建我们的界面</string>
+
+    <item name="Tag_APP" type="id"></item>
+    <item name="Tag_Book" type="id"></item>
 </resources>
