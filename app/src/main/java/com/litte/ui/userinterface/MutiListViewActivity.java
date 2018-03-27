@@ -38,14 +38,14 @@ public class MutiListViewActivity extends Activity {
             switch ((int)(Math.random()*2)){
                 case TYPE_APP:
                     datas.add(new APP(R.drawable.a,"备忘录"));
-                    datas.add(new APP(R.drawable.b,"音乐"));
-                    datas.add(new APP(R.drawable.c,"游戏"));
+//                    datas.add(new APP(R.drawable.b,"音乐"));
+//                    datas.add(new APP(R.drawable.c,"游戏"));
                     break;
                 case TYPE_BOOK:
                     datas.add(new Book("《第一行代码》", "郭霖"));
-                    datas.add(new Book("《Thinking in JAVA》", "Ｂruce Eckel"));
-                    datas.add(new Book("《端到端QoS网络设计》", "Tim Szigeti"));
-                    datas.add(new Book("《鸟哥的LINUX》", "鸟哥"));
+//                    datas.add(new Book("《Thinking in JAVA》", "Ｂruce Eckel"));
+//                    datas.add(new Book("《端到端QoS网络设计》", "Tim Szigeti"));
+//                    datas.add(new Book("《鸟哥的LINUX》", "鸟哥"));
             }
         }
         adapter = new MutiAdapter(this,datas);

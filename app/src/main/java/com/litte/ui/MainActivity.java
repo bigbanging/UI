@@ -4,6 +4,8 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.TextView;
 
@@ -13,11 +15,16 @@ import com.litte.ui.layout.GridActivity;
 import com.litte.ui.layout.LinearActivity;
 import com.litte.ui.layout.RelativeActivity;
 import com.litte.ui.layout.TableActivity;
+import com.litte.ui.real.NewActivity;
+import com.litte.ui.userinterface.AutoCompleteTextViewActivity;
 import com.litte.ui.userinterface.DateAndTimeActivity;
+import com.litte.ui.userinterface.DrawerLayoutActivity;
 import com.litte.ui.userinterface.EditTextActivity;
+import com.litte.ui.userinterface.ExpandableListViewActivity;
 import com.litte.ui.userinterface.GridViewActivity;
 import com.litte.ui.userinterface.ImageViewActivity;
 import com.litte.ui.userinterface.ListViewActivity;
+import com.litte.ui.userinterface.NotificationActivity;
 import com.litte.ui.userinterface.ProgressBarActivity;
 import com.litte.ui.userinterface.RadioCheckActivity;
 import com.litte.ui.userinterface.RatingBarActivity;
@@ -26,6 +33,7 @@ import com.litte.ui.userinterface.SeekBarActivity;
 import com.litte.ui.userinterface.SpinnerActivity;
 import com.litte.ui.userinterface.TextViewActivity;
 import com.litte.ui.userinterface.ToggleSwitchActivity;
+import com.litte.ui.userinterface.ViewFlipperActivity;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -94,11 +102,15 @@ public class MainActivity extends Activity {
     Button btnViewPager;
     @BindView(R.id.btn_drawerLayout)
     Button btnDrawerLayout;
+    @BindView(R.id.tv_next)
+    TextView tvNext;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        requestWindowFeature(Window.FEATURE_NO_TITLE);//去掉标题拦
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
     }
@@ -106,7 +118,8 @@ public class MainActivity extends Activity {
     @OnClick({R.id.btn_linearlayout, R.id.btn_relativelayout, R.id.btn_tablelayout, R.id.btn_framelayout, R.id.btn_absolutelayout, R.id.btn_gridelayout,
             R.id.btn_textView, R.id.btn_editText, R.id.btn_button, R.id.btn_imageView, R.id.btn_radioButton_checkBox, R.id.btn_toggleButton_switch, R.id.btn_progressBar, R.id.btn_seekBar, R.id.btn_ratingBar,
             R.id.btn_scrollView, R.id.btn_date_time, R.id.btn_listView, R.id.btn_gridView, R.id.btn_spinner, R.id.btn_autoCompleteTextView, R.id.btn_expandableListView, R.id.btn_viewFlipper, R.id.btn_toast,
-            R.id.btn_notification, R.id.btn_alertDialog, R.id.btn_popupWindow, R.id.btn_menu, R.id.btn_viewPager, R.id.btn_drawerLayout})
+            R.id.btn_notification, R.id.btn_alertDialog, R.id.btn_popupWindow, R.id.btn_menu, R.id.btn_viewPager, R.id.btn_drawerLayout,
+            R.id.tv_next})
     public void onViewClicked(View view) {
         switch (view.getId()) {
             /*Android 中的6大布局*/
@@ -174,14 +187,18 @@ public class MainActivity extends Activity {
                 startActivity(new Intent(this, SpinnerActivity.class));
                 break;
             case R.id.btn_autoCompleteTextView:
+                startActivity(new Intent(this, AutoCompleteTextViewActivity.class));
                 break;
             case R.id.btn_expandableListView:
+                startActivity(new Intent(this, ExpandableListViewActivity.class));
                 break;
             case R.id.btn_viewFlipper:
+                startActivity(new Intent(this, ViewFlipperActivity.class));
                 break;
             case R.id.btn_toast:
                 break;
             case R.id.btn_notification:
+                startActivity(new Intent(this, NotificationActivity.class));
                 break;
             case R.id.btn_alertDialog:
                 break;
@@ -192,6 +209,10 @@ public class MainActivity extends Activity {
             case R.id.btn_viewPager:
                 break;
             case R.id.btn_drawerLayout:
+                startActivity(new Intent(this, DrawerLayoutActivity.class));
+                break;
+            case R.id.tv_next:
+                startActivity(new Intent(this, NewActivity.class));
                 break;
         }
     }

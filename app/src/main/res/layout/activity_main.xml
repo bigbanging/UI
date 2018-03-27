@@ -39,11 +39,10 @@
         android:id="@+id/btn_framelayout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/btn_linearlayout"
-        android:layout_below="@+id/btn_linearlayout"
-        android:layout_marginTop="29dp"
+        android:layout_marginTop="15dp"
         android:text="帧布局"
-        android:layout_alignEnd="@+id/btn_linearlayout" />
+        android:layout_below="@+id/btn_linearlayout"
+        android:layout_alignStart="@+id/btn_linearlayout" />
 
     <Button
         android:id="@+id/btn_absolutelayout"
@@ -90,13 +89,13 @@
         android:id="@+id/btn_textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="12dp"
         android:textSize="18sp"
         android:textStyle="bold"
         android:typeface="serif"
         android:text="TextView"
         android:layout_below="@+id/textView2"
-        android:layout_alignEnd="@+id/btn_framelayout" />
+        android:layout_toStartOf="@+id/textView2" />
 
     <Button
         android:id="@+id/btn_editText"
@@ -126,7 +125,7 @@
         android:id="@+id/btn_imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="18dp"
+        android:layout_marginTop="11dp"
         android:textSize="16sp"
         android:textStyle="bold"
         android:typeface="serif"
@@ -160,13 +159,13 @@
         android:id="@+id/btn_progressBar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/btn_imageView"
-        android:layout_marginTop="18dp"
-        android:layout_toStartOf="@+id/btn_editText"
+        android:layout_marginTop="10dp"
         android:textSize="18sp"
         android:textStyle="bold"
         android:typeface="serif"
-        android:text="ProgressBar" />
+        android:text="ProgressBar"
+        android:layout_below="@+id/btn_imageView"
+        android:layout_alignStart="@+id/btn_textView" />
 
     <Button
         android:id="@+id/btn_seekBar"
@@ -192,10 +191,10 @@
         android:id="@+id/btn_scrollView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="21dp"
+        android:layout_marginTop="15dp"
         android:text="ScrollView"
         android:layout_below="@+id/btn_progressBar"
-        android:layout_alignStart="@+id/btn_framelayout" />
+        android:layout_alignEnd="@+id/btn_notification" />
 
     <Button
         android:id="@+id/btn_date_time"
@@ -240,9 +239,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="AutoCompleteTextView"
-        android:layout_alignBaseline="@+id/btn_spinner"
-        android:layout_alignBottom="@+id/btn_spinner"
-        android:layout_alignParentEnd="true" />
+        android:layout_below="@+id/btn_date_time"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="6dp" />
 
     <Button
         android:id="@+id/btn_expandableListView"
@@ -295,31 +294,41 @@
         android:text="PopupWindow"
         android:layout_alignBaseline="@+id/btn_alertDialog"
         android:layout_alignBottom="@+id/btn_alertDialog"
-        android:layout_toStartOf="@+id/btn_toast" />
+        android:layout_alignParentEnd="true" />
 
     <Button
         android:id="@+id/btn_menu"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/btn_notification"
+        android:layout_marginTop="9dp"
+        android:text="Menu"
         android:layout_below="@+id/btn_notification"
-        android:layout_marginTop="44dp"
-        android:text="Menu" />
+        android:layout_alignStart="@+id/btn_notification" />
 
     <Button
         android:id="@+id/btn_viewPager"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/btn_menu"
-        android:layout_toStartOf="@+id/btn_seekBar"
-        android:text="ViewPager" />
+        android:text="ViewPager"
+        android:layout_alignBaseline="@+id/btn_menu"
+        android:layout_alignBottom="@+id/btn_menu"
+        android:layout_toStartOf="@+id/btn_autoCompleteTextView" />
 
     <Button
         android:id="@+id/btn_drawerLayout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="DrawerLayout"
         android:layout_alignTop="@+id/btn_viewPager"
-        android:layout_toEndOf="@+id/btn_seekBar"
-        android:text="DrawerLayout" />
+        android:layout_alignEnd="@+id/btn_viewFlipper"
+        android:layout_marginTop="6dp" />
 
+    <TextView
+        android:id="@+id/tv_next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="进入下一页"
+        android:textSize="18sp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_horizontal"/>
 </RelativeLayout>

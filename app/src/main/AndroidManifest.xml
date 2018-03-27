@@ -45,7 +45,62 @@
         <activity android:name=".userinterface.UpdateListViewActivity" />
         <activity android:name=".userinterface.MutiListViewActivity" />
         <activity android:name=".userinterface.GridViewActivity" />
-        <activity android:name=".userinterface.SpinnerActivity"></activity>
+        <activity android:name=".userinterface.SpinnerActivity" />
+        <activity android:name=".userinterface.AutoCompleteTextViewActivity" />
+        <activity android:name=".userinterface.ExpandableListViewActivity" />
+        <activity android:name=".userinterface.ViewFlipperActivity" />
+        <activity android:name=".userinterface.NotificationActivity" />
+        <activity android:name=".userinterface.ShowNotificationActivity" />
+        <activity
+            android:name=".userinterface.DrawerLayoutActivity"
+            android:label="@string/title_activity_drawer_layout" />
+        <activity android:name=".real.NewActivity" />
+        <activity android:name=".real.HandlerActivity" />
+        <activity android:name=".real.ConfigurationActivity" />
+        <activity android:name=".real.AsyncTaskActivity" />
+        <activity android:name=".real.ActivityActivity" />
+        <activity android:name=".real.Activity2Activity" />
+        <activity android:name=".real.WeatherIconActivity" />
+        <activity android:name=".real.ServiceActivity" />
+
+        <service android:name=".real.TestService">
+            <intent-filter>
+                <action android:name="com.litte.ui.real.TEST_SERVICE" />
+            </intent-filter>
+        </service>
+
+        <activity android:name=".real.BindServiceActivity" />
+
+        <service
+            android:name=".real.TestService1"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.litter.TEST_SERVICE1" />
+            </intent-filter>
+        </service>
+
+        <activity android:name=".real.IntentActivity" />
+
+        <service
+            android:name=".real.MyIntentService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.litter.intent_service" />
+            </intent-filter>
+        </service>
+
+        <activity android:name=".real.AIDLActivity" />
+
+        <service
+            android:name=".real.AIDLService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.AIDLService"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </service>
     </application>
 
 </manifest>

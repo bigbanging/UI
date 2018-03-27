@@ -46,4 +46,20 @@
         android:text="登录"
         android:textSize="22sp"
         android:textColor="#FFFF"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/et_password"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="textPassword"
+            android:background="@drawable/login_edittext_selector"/>
+        <Button
+            android:id="@+id/btn_show_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="密码可见"/>
+    </LinearLayout>
 </RelativeLayout>

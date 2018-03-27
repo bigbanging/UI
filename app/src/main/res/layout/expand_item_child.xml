@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:layout_margin="20dp"
+    android:background="#6BBA79">
+
+    <ImageView
+        android:id="@+id/iv_expand_child_icon"
+        android:layout_width="80dp"
+        android:layout_height="80dp" />
+    <TextView
+        android:id="@+id/tv_expand_child_name"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:textSize="35sp"/>
+</LinearLayout>
